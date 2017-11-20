@@ -3,12 +3,12 @@ body{
 	font-size: 18px;
 	color: #383838;
 	line-height: 30px;
-	background: #1b7e5a;
+	background: #11537e;
 	line-height: 1.5;
 }
 #horizontal-ad{display:block;}
 #box-ad{display:none;}
-.topbottom {margin: 6% auto;}
+.topbottom {margin: 3% auto;}
 
 a, a:hover{
 	text-decoration: none;
@@ -59,7 +59,7 @@ a, a:hover{
 	background: #fff;
 	margin: 0 !important;
 	padding: 20px 30px ;
-	min-height:439px!important;
+	min-height:517px!important;
 }
 
 .person{
