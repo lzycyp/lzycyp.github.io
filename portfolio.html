@@ -18,6 +18,9 @@
 				.rw-sentence-IE{ display: block;  }
 			</style>
 	<![endif]-->
+
+
+
 </head>
 <body>
 <div class="container topbottom">
@@ -28,15 +31,15 @@
           <ul>
             <li>
               <img src="img/about-icon.png">
-              <a href="index.html">! 我</a>
+              <a href="index.html">我</a>
             </li>
             <li>
               <img src="img/portfolio-icon.png">
-              <a href="portfolio.html">& 项目</a>
+              <a href="portfolio.html">项目</a>
             </li>
             <li>
             <img src="img/followme-icon.png">
-            <a href="follow.html">@ 关注我</a>
+            <a href="follow.html">关注</a>
             </li>
             <!--<li>-->
               <!--<img src="img/contact-icon.png">-->
@@ -54,16 +57,16 @@
       <div id="portfolio" class="white">
         <ul id="portfolio-filter">
           <li><a href="#" class="current" data-filter="*">所有</a></li>
-          <li><a href="#" data-filter=".webdesign">地理</a></li>
-          <li><a href="#" data-filter=".photoghraphy">可视化</a></li>
-          <li><a href="#" data-filter=".illustration">商务</a></li>
+          <li><a href="#" data-filter=".geoSoft">地理</a></li>
+          <li><a href="#" data-filter=".visSoft">可视化</a></li>
+          <li><a href="#" data-filter=".bizSoft">商务</a></li>
           <!--<li><a href="#" data-filter=".print">Print</a></li>-->
           <!--<li><a href="#" data-filter=".animation">Animation</a></li>-->
         </ul>
         <ul id="portfolio-list">
-          <li class="illustration print">
+          <li class="geoSoft bizSoft  print">
             <div class="flip-container">
-              <div class="flipper"><a href="img/portfolio/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+              <div class="flipper"><a href="img/portfolio/1.jpg" title="海洋信息平台" rel="portfolio" class="folio">
                 <div class="front">  <img src="img/portfolio/1-thumb.jpg" alt=""> </div>
                 <div class="back">
                   <h4>Heading</h4>
@@ -73,9 +76,9 @@
               </div>
             </div>
           </li>
-          <li class="illustration print">
+          <li class="geoSoft print">
             <div class="flip-container">
-              <div class="flipper"><a href="img/portfolio/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+              <div class="flipper"><a href="img/portfolio/1.jpg" title="geosquare" rel="portfolio" class="folio">
                 <div class="front">  <img src="img/portfolio/1-thumb.jpg" alt=""> </div>
                 <div class="back">
                   <h4>Heading</h4>
@@ -85,9 +88,9 @@
               </div>
             </div>
           </li>
-          <li class="illustration print">
+          <li class="geoSoft print">
             <div class="flip-container">
-              <div class="flipper"><a href="img/portfolio/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+              <div class="flipper"><a href="img/portfolio/1.jpg" title="地理服务核心代码" rel="portfolio" class="folio">
                 <div class="front">  <img src="img/portfolio/1-thumb.jpg" alt=""> </div>
                 <div class="back">
                   <h4>Heading</h4>
@@ -97,9 +100,9 @@
               </div>
             </div>
           </li>
-          <li class="illustration print">
+          <li class="geoSoft print">
             <div class="flip-container">
-              <div class="flipper"><a href="img/portfolio/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+              <div class="flipper"><a href="img/portfolio/1.jpg" title="地名地址工具" rel="portfolio" class="folio">
                 <div class="front">  <img src="img/portfolio/1-thumb.jpg" alt=""> </div>
                 <div class="back">
                   <h4>Heading</h4>
@@ -109,9 +112,9 @@
               </div>
             </div>
           </li>
-          <li class="illustration print">
+          <li class="geoSoft bizSoft print">
             <div class="flip-container">
-              <div class="flipper"><a href="img/portfolio/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+              <div class="flipper"><a href="img/portfolio/1.jpg" title="农业信息化平台" rel="portfolio" class="folio">
                 <div class="front">  <img src="img/portfolio/1-thumb.jpg" alt=""> </div>
                 <div class="back">
                   <h4>Heading</h4>
@@ -122,9 +125,9 @@
               </div>
             </div>
           </li>
-          <li class="illustration print">
+          <li class="visSoft bizSoft print">
             <div class="flip-container">
-              <div class="flipper"><a href="img/portfolio/1.jpg" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque" rel="portfolio" class="folio">
+              <div class="flipper"><a href="img/portfolio/1.jpg" title="数据可视化平台" rel="portfolio" class="folio">
                 <div class="front">  <img src="img/portfolio/1-thumb.jpg" alt=""> </div>
                 <div class="back">
                   <h4>Heading</h4>
@@ -151,8 +154,10 @@
 		},function(){
 			$(this).removeClass('flip');
 		});
+        $.getJSON("http://bbs.jygong.com/cyp.php", function(json){
+            console.log(json);
+        });
 	});
 </script>
-  
 </body>
 </html>
