@@ -76,12 +76,11 @@
 	$(document).ready(function(){
         $.ajax({
             type: "GET",
-            url: "https://bbs.jygong.com/cyp.php",
+            url: "http://bbs.jygong.com/cyp.php",
             contentType:"application/json; charset=utf-8",
             dataType:"jsonp",
             jsonp: "callbackparam",
             success: function(data){
-                console.log(data);
                 var projectList = data.project;
                 var listHtml = "";
                 for(var i = 0; i <projectList.length; i++ ){
